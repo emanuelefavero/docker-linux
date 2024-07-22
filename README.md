@@ -1,6 +1,6 @@
 # Docker Linux
 
-This is a custom Docker image based on Ubuntu. It a good starting point for testing Linux applications in a containerized environment.
+This is a custom Docker image based on Ubuntu. It a good starting point for testing Linux in a containerized environment.
 
 ## Features
 
