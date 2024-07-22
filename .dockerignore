@@ -9,6 +9,7 @@
 *.log
 Dockerfile
 .dockerignore
+docker-compose.yml
 
 # Directories
 node_modules
