@@ -1,0 +1,6 @@
+services:
+  run_script:
+    image: ubuntu-custom
+    volumes:
+      - .:/root
+    command: /bin/bash /root/script.sh

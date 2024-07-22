@@ -1,0 +1,15 @@
+# Files
+.git
+.gitignore
+.DS_Store
+.env
+.env.*
+*.md
+*.txt
+*.log
+Dockerfile
+.dockerignore
+
+# Directories
+node_modules
+bower_components
