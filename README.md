@@ -15,3 +15,7 @@ This is a custom Docker image based on Ubuntu. It a good starting point for test
 4. Test your Linux application: (e.g. `./script.sh`)
 
 > Note: Make sure you have Docker installed on your machine
+
+## License
+
+- [MIT](LICENSE.md)
