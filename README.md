@@ -15,6 +15,8 @@ This is a custom Docker image based on Ubuntu. It a good starting point for test
 4. Test your Linux application: (e.g. `./script.sh`)
 
 > Note: Make sure you have Docker installed on your machine
+>
+> TIP: When saving files in the container, they will be lost when the container is stopped. To save files, use a volume or copy them to the Dockerfile directory so they are copied to the container during the next build
 
 ## License
 
