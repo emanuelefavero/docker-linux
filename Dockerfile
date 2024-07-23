@@ -13,8 +13,8 @@ RUN apt-get update && apt-get install -y \
     inotify-tools \
     curl
 
-# Set all scripts to be executable
-RUN chmod +x *.sh
+# Set all scripts to be executable, TIP: || true is used to ignore errors
+RUN chmod +x *.sh || true
 
 # Set the default command to start a shell
 CMD ["/bin/bash"]
