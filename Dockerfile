@@ -5,10 +5,13 @@ FROM ubuntu:latest
 WORKDIR /root
 
 # Copy all the files from the current directory to the /root directory
-COPY . .
+# COPY . .
 
 # Update the package list and install vi, fswatch, curl
-RUN apt-get update && apt-get install -y vim inotify-tools curl
+RUN apt-get update && apt-get install -y \
+    vim \
+    inotify-tools \
+    curl
 
 # Set all scripts to be executable
 RUN chmod +x *.sh
