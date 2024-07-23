@@ -11,7 +11,9 @@ WORKDIR /root
 RUN apt-get update && apt-get install -y \
     vim \
     inotify-tools \
-    curl
+    curl \
+    git \
+    && apt-get clean # Clean up the apt cache
 
 # Set all scripts to be executable, TIP: || true is used to ignore errors
 RUN chmod +x *.sh || true
