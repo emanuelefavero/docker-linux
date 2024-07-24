@@ -22,6 +22,7 @@ This is a custom Docker image based on Ubuntu. It a good starting point for test
 - Test your Linux application: (e.g. `./script.sh`)
 
 > Tip: You could create an alias for the above docker command in your `.bashrc` or `.zshrc` file (e.g. `alias ubuntu='docker run -it -v ubuntu-root-volume:/root ubuntu-custom'`)
+> To delete a volume, use the command: `docker volume rm ubuntu-root-volume`
 
 ## License
 
