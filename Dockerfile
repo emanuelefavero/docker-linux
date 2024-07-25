@@ -7,12 +7,15 @@ WORKDIR /root
 # Copy all the files from the current directory to the /root directory
 # COPY . .
 
-# Update the package list and install necessary packages
+# Install the necessary packages
 RUN apt-get update && apt-get install -y \
     vim \
     inotify-tools \
     curl \
     git \
+    && curl -sL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y nodejs \
+    && npm install -g nodemon \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
