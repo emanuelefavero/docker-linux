@@ -1,8 +1,15 @@
 #!/bin/bash
 
 # While Loop
-count=1
-while [ $count -le 3 ]; do
-  echo $count
-  count=$((count + 1))
+i=1
+while [ $i -le 3 ]; do
+  echo $i
+  i=$((i + 1))
+done
+
+# While Loop with (( ))
+i=1
+while ((i <= 3)); do
+echo $i
+i=$((i + 1))
 done
